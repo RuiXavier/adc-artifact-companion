@@ -1,0 +1,32 @@
+name: "coq-cfml"
+opam-version: "2.0"
+maintainer: "arthur.chargueraud@inria.fr"
+
+homepage: "https://gitlab.inria.fr/charguer/cfml2"
+dev-repo: "git+https://gitlab.inria.fr/charguer/cfml2.git"
+bug-reports: "https://gitlab.inria.fr/charguer/cfml2/-/issues"
+license: "CC-BY-4.0"
+
+synopsis: "The CFML program verification system"
+description: """
+CFML is a program verification system for OCaml.
+This is a meta-package that installs CFML and its Coq libraries.
+"""
+
+depends: [
+  "cfml" { = version }
+  "coq-cfml-basis" { = version }
+  "coq-cfml-stdlib" { = version }
+]
+
+tags: [
+  "date:DATEDASH"
+  "logpath:CFML"
+  "category:Computer Science/Programming Languages/Formal Definitions and Theory"
+  "keyword:program verification"
+  "keyword:separation logic"
+  "keyword:weakest precondition"
+]
+authors: [
+  "Arthur Charguéraud"
+]
