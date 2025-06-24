@@ -18,3 +18,6 @@ The materials illustrate how to apply formal methods to verify the correctness o
 
 - 🔒 [CFML Proofs](./cfml/examples/Dblist/Dblist_proof.v)  
   Machine-checked proofs of correctness using [CFML (Characteristic Formulae for ML)](https://github.com/charguer/cfml).
+
+- 🧠 **Tactics Cheatsheet**  
+  Reference for common CFML tactics — [Official CFML Cheatsheet](https://github.com/charguer/cfml/blob/master/CHEATSHEET.md)
