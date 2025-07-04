@@ -246,12 +246,17 @@ let josephus (list: 'a dblist) step =
 (* Fold functions for the doubly-linked list *)
 
 *)
+let rec fold_left_aux f acc node tail =
+  if tail == node then f acc node.data
+  else fold_left_aux f (f acc node.data) node.next tail
+
 let fold_left f acc db =
-  let rec fold f acc node =
-    if node == (get_tail db) then (f acc node.data)
-    else fold f (f acc node.data) node.next
-  in
-  fold f acc (get_head db)
+  match db.head with
+  | Nil -> acc
+  | Cons n ->
+    match db.tail with
+    | Nil -> assert false
+    | Cons tail -> fold_left_aux f acc n tail
 
 let fold_right f db acc  =
   let rec fold f acc node =
