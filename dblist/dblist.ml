@@ -204,7 +204,7 @@ let josephus (list: 'a dblist) step =
 
 
 
-(* Fold functions for the doubly-linked list *)
+(* Higher-order iterator functions for the doubly-linked list *)
 
 
 let rec fold_left_aux f acc node tail =
