@@ -1,6 +1,6 @@
 # Formal Verification of OCaml Programs with Dynamic Memory
 
-This repository contains the complete set of **OCaml** code, **Gospel** specifications, and **CFML** proofs referenced in the paper _**"Formal Verification of OCaml Programs with Dynamic Memory"**_, developed as part of the **Curricular Development Activity (ADC) 2025**.
+This repository contains the complete set of **OCaml** code, **Gospel** specifications, and **CFML** proofs referenced in the paper _**"Formal Verification of OCaml Programs with Dynamic Memory: the Case of Doubly Linked Lists**_, developed as part of the **Curricular Development Activity (ADC) 2025**.
 
 The materials illustrate how to apply formal methods to verify the correctness of a doubly linked list written in OCaml, using a combination of:
 
